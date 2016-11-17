@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.schbang.in/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 17 Nov 2016 07:04:40 GMT -->
+<head>
+<!-- Meta, title, CSS, favicons, etc. -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="We offer services in website design, branding, media planning and buying as well as video production and marketing strategies.">
+<meta name="keywords" content="">
+<title>Schbang - A Holistic Digital Solutions Agency</title>
+<link rel="shortcut icon" href="../schbang.in/images/fevicon.png" type="image/x-icon">
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet">
+<script src="../code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="js/typed.js"></script>
+<script src="jquery.mobile-events.min.js"></script>
+<script>
+
+			var widthSwipe = $(window).width();
+			
+			if(widthSwipe < 1025){
+				$(document).on("swipeleft",function(){
+				    window.location.replace("game.html");
+				});
+				$(document).on("swiperight",function(){
+				    window.location.replace("game.html");
+				});	
+			}
+			
+
+			$(document).ready(function(){
+				
+				$("form#workwithusForm").submit(function(){
+					var aUrl = "inc/site.inc5e70.html?xAction=userContact&amp;"+$("form#workwithusForm").serialize();
+					$.ajax({
+						type: 'post',
+						url: aUrl,
+						success: function(data){
+							if(data == "OK"){								
+								$('.thankyou').show();
+								$('.workwithus').hide();
+								$('.jointhemadness').hide();
+								$('.wojoin').hide();
+								$('.ourclient').hide();
+
+							}else{
+								alert("Error in sending mail.");
+							}
+						}
+					});
+				 
+				  return false;
+				});
+
+				$("form#jointhemadnessForm").submit(function(){
+					var aUrl = "inc/site.incf5e7.html?xAction=userContact2&amp;"+$("form#jointhemadnessForm").serialize();
+					$.ajax({
+						type: 'post',
+						url: aUrl,
+						success: function(data){
+							if(data == "OK"){								
+								$('.thankyou').show();
+								$('.workwithus').hide();
+								$('.jointhemadness').hide();
+								$('.wojoin').hide();
+								$('.ourclient').hide();
+
+							}else{
+								alert("Error in sending mail.");
+							}
+						}
+					});
+				 
+				  return false;
+				});
+
+				$(document).keydown(function(e) {
+				    switch(e.which) {
+				        case 0: // space bar
+				        case 32: // space bar
+				        	//window.open('game.html', '_blank');		        	
+				        	window.location.replace("game.html");
+				        break;
+
+				        default: return; // exit this handler for other keys
+				    }
+				    e.preventDefault(); // prevent the default action (scroll / move caret)
+				});
+				$('.work').click(function(){
+					$('.workwithus').show();
+					$('.jointhemadness').hide();
+					$('.ourclient').hide();
+					$('.wojoin').hide();
+				});
+				$('.join').click(function(){
+					$('.jointhemadness').show();
+					$('.workwithus').hide();
+					$('.ourclient').hide();
+					$('.wojoin').hide();
+				});
+				
+				$('.client').click(function(){
+					$('.jointhemadness').hide();
+					$('.workwithus').hide();
+					$('.wojoin').hide();
+					$('.ourclient').show();
+				});
+
+				$('.closed').click(function(){
+					var divID = $(this).attr('rel');
+					$('.'+divID).hide();
+					$('.wojoin').show();
+
+				});
+
+				$("#typed").typed({
+		            strings: ["The New Schbang Website Is <br>Coming Soon!", "You Know What Else Is?", "Winter!", "Monsoons! (well, in it's entirety)", "NH7! (Especially Shillong)", "Russell Brand!", "You Should Know These Things", "Know Something Schbanging <br> That's Happening Soon?", "Write To Us And We will <br> Add It Here", "See How We Are Trying To Make <br> Schbang A Thing?", "Well, That's Because It Is", "We Could Just Say Coming Soon!", "Where's The Fun In That!", "Also, Being Random Somehow <br> Always Works", "We Like To Play Games", "Do You Like To Play Games?", "Play A Game", "NOW!"],
+		            typeSpeed: 100,
+		            backDelay: 500,
+		            loop: false,
+		            contentType: 'html', // or text
+		            // defaults to false for infinite loop
+		            loopCount: false,
+		            callback: function(){  },
+		            resetCallback: function() { newTyped(); }
+		        });
+
+		        $(".reset").click(function(){
+		            $("#typed").typed('reset');
+		        });
+			});
+		</script>
+<style>
+@media all {
+.lightbox {
+	display: none;
+}
+}
+/* code for animated blinking cursor */
+.typed-cursor {
+	opacity: 1;
+	font-weight: 100;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	-ms-animation: blink 0.7s infinite;
+	-o-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+ @-keyframes blink {
+ 0% {
+opacity:1;
+}
+ 50% {
+opacity:0;
+}
+ 100% {
+opacity:1;
+}
+}
+ @-webkit-keyframes blink {
+ 0% {
+opacity:1;
+}
+ 50% {
+opacity:0;
+}
+ 100% {
+opacity:1;
+}
+}
+ @-moz-keyframes blink {
+ 0% {
+opacity:1;
+}
+ 50% {
+opacity:0;
+}
+ 100% {
+opacity:1;
+}
+}
+ @-ms-keyframes blink {
+ 0% {
+opacity:1;
+}
+ 50% {
+opacity:0;
+}
+ 100% {
+opacity:1;
+}
+}
+ @-o-keyframes blink {
+ 0% {
+opacity:1;
+}
+ 50% {
+opacity:0;
+}
+ 100% {
+opacity:1;
+}
+}
+</style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="logo"> <h1> <img src="images/logo.png" class="img-responsive" alt="Schbang Media Solutions"></h1></div>
+  <div class="subscribe-wrapper">
+    <div class="loaderHash"> <img src="images/Logo_image.gif" class="img-responsive" alt="schbangsolutions"> </div>
+    <h1 class="coming-message"> <span id="typed" style="white-space:pre; word-wrap: break-word;"></span></h1>
+    <div class="workwithus">
+      <div class="message">Drop us your mail and our "Pet Shark" will get in touch with you.</div>
+      <form  method="post" name="workwithusForm" id="workwithusForm" onSubmit="return false;" enctype="text/plain">
+        <input type="text" name="work-email" id="work-email" class="col-lg-12" placeholder="Enter your email address" required>
+        <img src="images/close.png" class="closed" rel="workwithus"> <br>
+        <br>
+        <input type="submit" class="btn btn-dark col-lg-4 col-lg-offset-4" value="Submit">
+      </form>
+    </div>
+    <div class="jointhemadness">
+      <div class="message">Drop us your email and our “People Lovers” will get in touch with you.</div>
+      <form  method="post" name="jointhemadnessForm" id="jointhemadnessForm" onSubmit="return false;" enctype="text/plain">
+        <input type="email" name="join-email" id="join-email" class="col-lg-12" value="" placeholder="Enter your email address" required>
+        <img src="images/close.png" class="closed" rel="jointhemadness"> <br>
+        <br>
+        <input type="submit" class="btn btn-dark col-lg-4 col-lg-offset-4" value="Submit">
+      </form>
+    </div>
+    <!--Start Client Section-->
+    <section id="client" class="ourclient">
+      <div class="container">
+        <div class="title"> 
+          <!--h2>Featured Clients</h2>
+                  <div class="line">&nbsp;</div-->
+          <div class="closebtn"><img src="images/close.png" class="closed" rel="ourclient"></div>
+          <div class="content">
+            <p>Clients we have worked with. </p>
+          </div>
+        </div>
+        <div class="row"> 
+           <!-- Lodha -->
+          <div class="col-lg-4 align-center">
+            <div class="wrapimgcenter"> <span class="helper"></span><img src="images/clients/Lodha.png"> </div>
+          </div>
+        
+          
+           <!-- Finolex -->
+          <div class="col-lg-4 align-center">
+            <div class="wrapimgcenter"> <span class="helper"></span><img src="images/clients/finolex.png"> </div>
+          </div>
+          
+          
+           <!-- BBLUNT -->
+          <div class="col-lg-4 align-center">
+            <div class="wrapimgcenter"> <span class="helper"></span><img src="images/clients/BBLUNT.png"> </div>
+          </div>
+          
+          
+          <!-- good night -->
+          <div class="col-lg-4 align-center">
+            <div class="wrapimgcenter"> <span class="helper"></span><img src="images/clients/goodnight.png"> </div>
+          </div>
+          
+          
+          <!-- haygroup -->
+          <div class="col-lg-4 align-center">
+            <div class="wrapimgcenter"> <span class="helper"></span><img src="images/clients/haygrooup.png"> </div>
+          </div>
+          
+          
+           <!-- HDFC -->
+          <div class="col-lg-4 align-center">
+            <div class="wrapimgcenter"> <span class="helper"></span><img src="images/clients/HDFC.png"> </div>
+          </div>
+          
+          
+          <!-- housing -->
+          <div class="col-lg-4 align-center">
+            <div class="wrapimgcenter"> <span class="helper"></span><img src="images/clients/housing.jpg"> </div>
+          </div>
+          
+          
+           <!-- FIRSTCRY -->
+          <div class="col-lg-4 align-center">
+            <div class="wrapimgcenter"> <span class="helper"></span><img src="images/clients/FIRSTCRY.png"> </div>
+          </div>
+          
+           <!-- 9X -->
+          <div class="col-lg-4 align-center">
+            <div class="wrapimgcenter"> <span class="helper"></span><img src="images/clients/9X.png"> </div>
+          </div>
+          
+           <!-- NILAYA -->
+          <div class="col-lg-4 align-center">
+            <div class="wrapimgcenter"> <span class="helper"></span><img src="images/clients/NILAYA.png"> </div>
+          </div>
+          
+          
+           <!-- nupur -->
+          <div class="col-lg-4 align-center">
+            <div class="wrapimgcenter"> <span class="helper"></span><img src="images/clients/nupur.png"> </div>
+          </div>
+          
+          <!-- jet-->
+          <div class="col-lg-4 align-center">
+            <div class="wrapimgcenter"> <span class="helper"></span><img src="images/clients/jet.png"> </div>
+          </div>
+          
+          
+           <!-- camessi -->
+          <div class="col-lg-4 align-center">
+            <div class="wrapimgcenter"> <span class="helper"></span><img src="images/clients/camessi.png"> </div>
+          </div>
+          
+          
+           <!--  AP Royale Play -->
+          <div class="col-lg-4 align-center">
+            <div class="wrapimgcenter"> <span class="helper"></span><img src="images/clients/ASIANPAINTS.png"> </div>
+          </div>
+          
+          
+           <!-- CASTROL -->
+          <div class="col-lg-4 align-center">
+            <div class="wrapimgcenter"> <span class="helper"></span><img src="images/clients/CASTROL.png"> </div>
+          </div>
+          
+          
+           <!-- Nat Geo -->
+          <div class="col-lg-4 align-center">
+            <div class="wrapimgcenter"> <span class="helper"></span><img src="images/clients/NatGeo.jpg"> </div>
+          </div>
+          
+          
+          
+          <!-- nivea -->
+          <div class="col-lg-4 align-center">
+            <div class="wrapimgcenter"> <span class="helper"></span><img src="images/clients/nivea.jpg"> </div>
+          </div>
+          
+          
+           <!-- itl -->
+          <div class="col-lg-4 align-center">
+            <div class="wrapimgcenter"> <span class="helper"></span><img src="images/clients/ITL.png"> </div>
+          </div>
+          
+          <!-- AP Essess -->
+          <div class="col-lg-4 align-center">
+            <div class="wrapimgcenter"> <span class="helper"></span><img src="images/clients/essess_asianpaints.png"> </div>
+          </div>
+          
+          
+            <!-- United Spirits -->
+          <div class="col-lg-4 align-center">
+            <div class="wrapimgcenter"> <span class="helper"></span><img src="images/clients/united_spirits.png"> </div>
+          </div>
+          
+          
+           <!-- SEQUOIA -->
+          <div class="col-lg-4 align-center">
+            <div class="wrapimgcenter"> <span class="helper"></span><img src="images/clients/SEQUOIA.png"> </div>
+          </div>
+          
+          
+          
+           <!-- Indear  -->
+          <div class="col-lg-4 align-center">
+            <div class="wrapimgcenter"> <span class="helper"></span><img src="images/clients/indear.png"> </div>
+          </div>
+          
+          
+         
+          <!-- garnier -->
+          <div class="col-lg-4 align-center">
+            <div class="wrapimgcenter"> <span class="helper"></span><img src="images/clients/garnier.png"> </div>
+          </div>
+          
+          
+          <!-- Mr Home-->
+          <div class="col-lg-4 align-center">
+            <div class="wrapimgcenter"> <span class="helper"></span><img src="images/clients/mrhomecare.png"> </div>
+          </div>
+          
+         
+          
+           <!-- LOREAL -->
+          <div class="col-lg-4 align-center">
+            <div class="wrapimgcenter"> <span class="helper"></span><img src="images/clients/LOREAL.png"> </div>
+          </div>
+          
+          
+           <!-- PAYPAL -->
+          <div class="col-lg-4 align-center">
+            <div class="wrapimgcenter"> <span class="helper"></span><img src="images/clients/PAYPAL.png"> </div>
+          </div>
+          
+          
+           <!-- Eye-Q -->
+          <div class="col-lg-4 align-center">
+            <div class="wrapimgcenter"> <span class="helper"></span><img src="images/clients/eye_q.png"> </div>
+          </div>
+        
+          
+           <!-- IMS Learning -->
+          <div class="col-lg-4 align-center">
+            <div class="wrapimgcenter"> <span class="helper"></span><img src="images/clients/ims.png"> </div>
+          </div>
+          	
+          
+           <!-- STYLEFIESTA -->
+          <div class="col-lg-4 align-center">
+            <div class="wrapimgcenter"> <span class="helper"></span><img src="images/clients/STYLEFIESTA.png"> </div>
+          </div>
+          
+          
+          
+           <!-- CAMEDIA -->
+          <div class="col-lg-4 align-center">
+            <div class="wrapimgcenter"> <span class="helper"></span><img src="images/clients/CAMEDIA.png"> </div>
+          </div>
+          
+        </div>
+        
+        
+        <!-- End Row--> 
+        
+        <!--div class="btn-top align-center"><a type="button" class="btn btn-dark">View Work</a></div--> 
+      </div>
+    </section>
+    <!--End Client Section-->
+    
+    <div class="wojoin">
+      <div class="client">Our Clients </div>
+      <div class="work">Hire 
+        us</div>
+      <div class="join">Join the 
+        madness</div>
+    </div>
+    <div class="thankyou"> Thanks! We'll respond faster than you expect. </div>
+    <div class="or"> Or </div>
+    <div class="emailus" style="clear:both;"> Email us at <a href="mailto:info@schbangsolutions.com">info@schbangsolutions.com</a> </div>
+    <div class="arrow">
+      <div><img src="images/key_space_bar.svg"><br>
+        Hit Spacebar</div>
+      <div><img src="images/swipe.svg" width="30"><br>
+        Swipe Screen</div>
+    </div>
+  </div>
+</div>
+<a  id="tr" style="display:none;" href="game.html" target="_blank">iFrame</a>
+</body>
+
+<!-- Mirrored from www.schbang.in/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 17 Nov 2016 07:04:57 GMT -->
+</html>

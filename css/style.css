@@ -1,0 +1,341 @@
+body{
+	background-color: #f7f7f7;
+	font-family: 'Montserrat', sans-serif;
+	padding: 0px;
+	margin: 0px;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+
+img {
+  border: 0;
+}
+
+h1.coming-message{
+	font-size: 30px;
+	padding-top: 35px;
+	font-weight:bold;
+	;
+}
+.logo{
+	margin-left:5px;
+	margin-top: 20px;
+}
+
+form{
+	width:350px;
+	margin:auto;
+}
+.subscribe-wrapper{
+	
+	margin: 40px auto;
+	text-align: center;
+}
+
+.message{
+	font-size: 13px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+.loaderHash{
+	width: 280px;
+	margin: 0px auto;
+}
+
+.btn-dark, .btn-dark.focus, .btn-dark:active, .btn-dark:focus{
+  color: #fff;
+  background: #000;
+  background: linear-gradient(to bottom, #000 50%, #42f0b8 50%);
+  background-size: 100% 200%;
+  border: 0;
+  border-radius: 0px;
+  background-position:top left;
+  transition:all 0.5s ease;
+  margin-top:3px;
+}
+
+.btn-dark:hover{
+	background-position:bottom left;
+}
+
+a, a:hover{
+	
+	color:#3adaa7 !important;
+	text-decoration:none !important;
+}
+
+.or{
+	clear:both; font-size:15px; padding-top:15px;
+}
+
+.jointhemadness, .workwithus, .ourclient{
+	display:none;
+}
+
+.wojoin{
+	line-height:25px;
+	font-weight:bold;
+	padding:15px 0px; 
+	color:#bebdbd;
+	width:900px;
+	margin:auto;
+}
+
+.wojoin .work{
+	float:left;
+	width:33.30%;
+	text-align:center;
+	font-size:28px;
+	padding-right:20px;
+	border-right:1px solid #bebdbd;
+	cursor:pointer;
+	
+}
+
+.arrow{
+	padding-top:10px;
+	margin:auto;
+	width:280px;
+	font-size:10px;
+}
+
+
+.arrow > div:first-child{
+	padding-right:50px;
+	float:left;
+	padding-top:10px;
+}
+
+.arrow > div:nth-child(2){
+	float:right;
+}
+
+
+.closed{
+	cursor:pointer;
+	position:absolute;
+	margin-top:8px;
+}
+
+.wojoin .work:hover, .wojoin .join:hover{
+	color:#3adaa7;
+}
+
+.wojoin .join{
+	float:right;
+	width:33.30%;
+	text-align:center;
+	font-size:28px;
+	padding-left:20px;
+	cursor:pointer;
+}
+
+.wojoin .client{
+	float:left;
+	width:33.30%;
+	text-align:center;
+	font-size:28px;
+	padding-right:20px;
+	border-right:1px solid #bebdbd;
+	cursor:pointer;
+	
+}
+
+.thankyou{
+
+	color:#bebdbd;
+	font-size:20px;
+	display:none;
+
+}
+
+input[type="text"]{
+	height: 35px;
+	text-align: center;
+	width:90%;
+	margin-right:15px;
+}
+
+input[type="email"]{
+	height: 35px;
+	text-align: center;
+	width:90%;
+	margin-right:15px;
+} 
+
+.emailus{
+	padding-top: 15px;
+}
+
+/*Image center*/
+.wrapimgcenter {
+    height: 140px;      /* equals max image height */
+    width: 300px;
+    white-space: nowrap;
+    
+    text-align: center; margin: 1em 0;
+	margin:0px auto;
+}
+
+.wrapimgcenter .helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.wrapimgcenter img {
+    vertical-align: middle;
+    max-height: 140px;
+    max-width: 300px;
+}
+/*End Image Center*/
+
+
+@media (max-width: 800px) { 
+
+	.wojoin{
+		width:700px;
+	}
+
+	.logo{
+		width: 130px;
+  		margin: 20px auto;
+	}
+
+}
+
+@media (max-width: 480px) { 
+
+	.wojoin{
+		width:350px;
+	}
+
+	.wojoin .client, .wojoin .work, .wojoin .join{
+		padding-left:0px;
+		font-size:20px;
+	}
+
+	.wojoin .work{
+		line-height: 50px;
+	}
+
+	.arrow{
+		width:320px;
+	}
+
+	.subscribe-wrapper{
+		width: 350px;
+		margin: 40px auto;
+		text-align: center;
+	}
+
+	form{
+		width:300px;
+	}
+
+	.logo{
+		width: 130px;
+  		margin: 20px auto;
+	}
+
+	.subscribe-wrapper{
+		width: 320px;
+	}
+
+}
+
+@media (max-width: 320px) { 
+
+	/*Image center*/
+	.wrapimgcenter {
+	    width: 200px;
+	}
+
+	.wojoin .client, .wojoin .work, .wojoin .join {
+	  padding-left: 5px;
+	  font-size: 16px;
+	}
+
+	.wojoin .work{
+		line-height: inherit;
+	}
+
+
+	.wojoin{
+		width:250px;
+	}
+
+	.arrow{
+		width:265px;
+	}
+	.arrow > img:first-child {
+	  padding-right: 20px;
+	}
+
+	h1.coming-message{
+		font-size: 16px;
+	}
+
+	.wojoin .join, .wojoin .work{
+		font-size:18px;
+		
+	}
+
+
+	.subscribe-wrapper{
+		width: 290px;
+		margin: 40px auto;
+		text-align: center;
+	}
+
+	form{
+		width:250px;
+	}
+
+	.logo{
+		width: 130px;
+  		margin: 20px auto;
+	}
+
+	.loaderHash{
+		width: 220px;
+	}
+
+
+	.subscribe-wrapper{
+		width: 250px;
+	}
+
+}
+
+@media screen and (min-width: 1600px){
+  .subscribe-wrapper{
+  	width:1170px;
+  }
+
+  .loaderHash {
+  	width: 320px;
+   }
+
+   .wojoin{
+   	padding:25px 0px; 
+   }
+
+   .arrow{
+   	padding-top:20px;
+   }
+}
+
+@media screen and (min-width: 1920px){
+  .subscribe-wrapper{
+	  width:1170px;
+  	margin:100px auto;
+  }
+}
+
+.closebtn{float:right;}
